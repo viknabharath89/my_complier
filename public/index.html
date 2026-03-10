@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>AI Code Studio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Monaco Editor CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LEFT PANEL -->
+
+<div id="leftPanel">
+
+<div class="logo">❄️ CO(DE) PILOT</div>
+
+<div class="aiCard">
+<h3>Generate Code</h3>
+<p>Create starter code using AI.</p>
+
+<a href="https://code-an.onrender.com/" class="page-link">
+<button type="button">CO(DE) PILOT</button>
+</a>
+
+</div>
+
+<div class="aiCard">
+<button class="aiBtn" onclick="openExplain()">Explain</button>
+<p>Understand your program easily.</p>
+
+</div>
+
+
+
+<div class="tips">
+<h3>Tips</h3>
+<p>Write clean and simple code.</p>
+</div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+
+<div id="rightPanel">
+
+<div class="header">
+
+<select id="language" onchange="changeLanguage()">
+
+<option value="javascript">JavaScript</option>
+<option value="python">Python</option>
+<option value="c">C</option>
+<option value="cpp">C++</option>
+<option value="java">Java</option>
+<option value="php">PHP</option>
+<option value="ruby">Ruby</option>
+<option value="go">Go</option>
+<option value="rust">Rust</option>
+<option value="kotlin">Kotlin</option>
+
+</select>
+
+<button onclick="runCode()">Run</button>
+
+</div>
+
+<div id="filename">main.js</div>
+
+<!-- MONACO EDITOR -->
+<div id="editor"></div>
+
+<div class="ioPanel">
+
+<div class="inputBox">
+<h4>Input</h4>
+<textarea id="input"></textarea>
+</div>
+
+<div class="outputBox">
+<h4>Output</h4>
+<div id="output"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ONLY ONE SCRIPT HERE -->
+<script src="script.js"></script>
+
+</body>
+</html>
